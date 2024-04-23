@@ -62,7 +62,7 @@ const SignupContainer = () => {
                     <Form className="max-w-md mx-auto">
                         {/* First Name Input */}
                         <div className="mb-6 sm:flex sm:justify-between">
-                            <div className="sm:mr-3 sm:w-1/2">
+                            <div className="mb-6 sm:mb-0 sm:mr-3 sm:w-1/2">
                                 <label htmlFor="firstName" className="block text-sm font-semibold text-[#0e0e0e]">
                                     First Name
                                 </label>
