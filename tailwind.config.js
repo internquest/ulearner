@@ -12,7 +12,7 @@ module.exports = {
       },
       colors: {
         error: "#cc3341",
-        lime: "#c9f270"
+        lime: "#daf996"
       }
     },
   },

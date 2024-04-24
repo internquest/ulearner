@@ -42,7 +42,7 @@ const TestimonialCard = ({ status, title, description, author, url }) => {
                     <div className="mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-between cursor-pointer">
                         <div>
                             <div className="flex items-center justify-between">
-                                <span className="bg-[#DAF996] py-1 px-2 rounded-sm font-semibold text-xs leading-4 text-black">{status}</span>
+                                <span className="bg-lime py-1 px-2 rounded-sm font-semibold text-xs leading-4 text-black">{status}</span>
                                 <div>
                                     <Image src={Bookmark} height={15} width={15} alt='save' />
                                 </div>

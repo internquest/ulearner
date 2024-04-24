@@ -27,7 +27,7 @@ const App = () => {
                 </div>
                 <div className='p-4'>
                     <div className="flex items-center w-full justify-between p-4 bg-[#f0e6ff] border border-gray-200 md:gap-x-4 rounded-md">
-                        <p className="text-md text-gray-800 selection:bg-[#DAF996]">
+                        <p className="text-md text-gray-800 selection:bg-lime">
                             <span className='font-bold'>A better way of searching.
                             </span> We improved how we sort jobs so you see the jobs that are the best fit for you first.
                         </p>
