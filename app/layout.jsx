@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import SideNavbar from "@/app/ui/Sidebar/Sidebar";
+import BottomNavigation from "@/app/ui/BottomNavigation/BottomNavigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -11,7 +12,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} selection:bg-lime`}>{children}</body>
+      <body className={inter.className}>
+        <div className='selection:bg-lime'>
+          <SideNavbar />
+        </div>
+        <div className="lg:ml-72 selection:bg-lime bg-[#fafafa]">
+          {children}
+        </div>
+        <BottomNavigation />
+      </body>
     </html>
   );
 }
