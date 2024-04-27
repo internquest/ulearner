@@ -1,6 +1,28 @@
 import React from 'react'
-import Card from "@/app/ui/Cards/VideosCard"
-import cardData from "@/app/ui/Cards/cardData"
+import Card from "@/app/ui/Cards/CoursesCard"
+const cardData = [
+    {
+        key: 1,
+        title: "Complete C++ Tutorial in One Shot 2023 | Beginner to Advanced | Basics of C++ Programming",
+        author: "College Wallah",
+        date: "Sep, 23",
+        url: "https://github.com/"
+    },
+    {
+        key: 2,
+        title: "C++ Programming Course - Basics to Advanced",
+        author: "freeCodeCamp.org",
+        date: "Feb, 22",
+        url: "https://github.com/"
+    },
+    {
+        key: 3,
+        title: "C++ A complete and modern course for beginners",
+        author: "Hitesh Choudhary",
+        date: "Dec, 22",
+        url: "https://github.com/"
+    },
+]
 const Courses = () => {
     return (
         <section className='bg-[#fafafa] w-full py-4 px-0 sm:px-4 lg:px-0'>
@@ -10,10 +32,9 @@ const Courses = () => {
                         {cardData.map((card, index) => (
                             <Card
                                 key={index}
-                                status={card.status}
                                 title={card.title}
-                                description={card.description}
                                 author={card.author}
+                                date={card.date}
                                 url={card.url}
                             />
                         ))}

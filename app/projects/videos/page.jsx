@@ -1,7 +1,28 @@
 import TopBar from '@/app/ui/Topbar/TopBar'
 import Card from '@/app/ui/Cards/VideosCard'
-import cardData from '@/app/ui/Cards/cardData'
 import { RiSearchLine } from 'react-icons/ri'
+
+const cardData = [
+    {
+        key: 1,
+        title: "SAAS Automation Builder: Clerk Authentication, Neon Tech, Uploadcare, Ngrok, Nextjs 14, Stripe, Bun",
+        author: "Web Prodigies",
+        url: "https://github.com/"
+    },
+    {
+        key: 2,
+        title: "Build and Deploy a Fullstack Reddit Clone: Next.js, React, Tailwind, Auth, Prisma, MySQL",
+        author: "Josh Tried Coding",
+        url: "https://github.com/"
+    },
+    {
+        key: 3,
+        title: "Build and Deploy a Fullstack Reddit Clone: Next.js, React, Tailwind, Auth, Prisma, MySQL",
+        author: "Josh Tried Coding",
+        url: "https://github.com/"
+    },
+]
+
 const VideosPage = () => {
     return (
         <>

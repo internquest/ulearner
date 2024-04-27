@@ -3,30 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-const cardData = [
-    {
-        key: 1,
-        title: "Revive Image",
-        techStack: [
-            "NextJS", "React", "Tailwind CSS", "Prisma", "NextAuth", "Redis", "TypeScript"
-        ]
-    },
-    {
-        key: 2,
-        title: "Google Docs Clone",
-        techStack: [
-            "React", "Tailwind CSS", "Socket.io", "TypeScript"
-        ]
-    },
-    {
-        key: 3,
-        title: "GitHub Readme Creator",
-        techStack: [
-            "NextJS", "React", "Tailwind CSS", "JavaScript"
-        ]
-    },
-]
-
 const PlaylistCard = ({ title, techStack, url }) => {
     const [isLoading, setIsLoading] = useState(true);
 

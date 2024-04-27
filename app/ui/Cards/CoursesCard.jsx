@@ -1,10 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState, useEffect } from 'react';
-import Bookmark from '@/app/assets/Bookmark.svg';
-import Image from 'next/image';
 import Link from 'next/link';
-const CoursesCard = ({ status, title, description, author, url }) => {
+const CoursesCard = ({ title, author, date, url }) => {
     const [isLoading, setIsLoading] = useState(true);
 
     // Simulate loading effect
@@ -33,7 +31,7 @@ const CoursesCard = ({ status, title, description, author, url }) => {
                         </div>
                         <div className="flex items-center mt-4">
                             <div className="w-10 h-10 mr-3 rounded-xl bg-gray-200 animate-pulse"></div>
-                            <span className="font-medium leading-10 text-gray-200 cursor-pointer tracking-normal h-3 bg-gray-200 rounded animate-pulse"></span>
+                            <span className="font-medium  text-gray-200 cursor-pointer tracking-normal h-3 bg-gray-200 rounded animate-pulse"></span>
                         </div>
                     </div>
                 </>
@@ -41,27 +39,18 @@ const CoursesCard = ({ status, title, description, author, url }) => {
                 <Link href={url} target="_blank">
                     <div className="mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-between cursor-pointer">
                         <div>
-                            <div className="flex items-center justify-between">
-                                <span className="bg-lime py-1 px-2 rounded-sm font-semibold text-xs leading-4 text-black">{status}</span>
-                                <div>
-                                    <Image src={Bookmark} height={15} width={15} alt='save' />
-                                </div>
-                            </div>
                             <div className="mt-2">
                                 <h2 href="#" className="text-lg leading-6 text-start font-semibold text-gray-800 tracking-normal">
                                     {title}
                                 </h2>
-                                <p className="mt-2 text-[#0e0e0e] leading-7 tracking-normal">{description}</p>
                             </div>
                         </div>
-                        <div className="flex items-center mt-4">
-                            <img
-                                className=" w-6 h-6 mr-3 rounded"
-                                src="https://media2.vault.com/14343503/210909_jp-morgan_logo.jpg"
-                                alt="avatar"
-                            />
-                            <p className=" leading-10 text-[#0e0e0e] text-base tracking-normal" tabIndex="0" role="link">
+                        <div className="mt-4">
+                            <p className="pb-2 text-blue-600 text-base tracking-normal font-medium" tabIndex="0" role="link">
                                 {author}
+                            </p>
+                            <p className="  text-[#0e0e0e] opacity-50 text-base tracking-normal font-medium" tabIndex="0" role="link">
+                                {date}
                             </p>
                         </div>
                     </div>
