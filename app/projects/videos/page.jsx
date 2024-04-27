@@ -1,5 +1,5 @@
 import TopBar from '@/app/ui/Topbar/TopBar'
-import Card from '@/app/ui/Cards/Card'
+import Card from '@/app/ui/Cards/VideosCard'
 import cardData from '@/app/ui/Cards/cardData'
 import { RiSearchLine } from 'react-icons/ri'
 const VideosPage = () => {

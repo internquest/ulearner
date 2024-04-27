@@ -1,6 +1,31 @@
 import TopBar from "@/app/ui/Topbar/TopBar"
-import Card from "@/app/ui/Cards/Card"
-import cardData from "@/app/ui/Cards/cardData"
+import Card from "@/app/ui/Cards/PlaylistCard"
+const cardData = [
+    {
+        key: 1,
+        title: "Revive Image",
+        techStack: [
+            "NextJS", "React", "Tailwind CSS", "Prisma", "NextAuth", "Redis", "TypeScript"
+        ],
+        url: "https://github.com/"
+    },
+    {
+        key: 2,
+        title: "Google Docs Clone",
+        techStack: [
+            "React", "Tailwind CSS", "Socket.io", "TypeScript"
+        ],
+        url: "https://github.com/"
+    },
+    {
+        key: 3,
+        title: "GitHub Readme Creator",
+        techStack: [
+            "NextJS", "React", "Tailwind CSS", "JavaScript"
+        ],
+        url: "https://github.com/"
+    },
+]
 const Playlists = () => {
     return (
         <div>
@@ -20,11 +45,9 @@ const Playlists = () => {
                             {cardData.map((card, index) => (
                                 <Card
                                     key={index}
-                                    status={card.status}
                                     title={card.title}
-                                    description={card.description}
-                                    author={card.author}
                                     url={card.url}
+                                    techStack={card.techStack}
                                 />
                             ))}
                         </div>

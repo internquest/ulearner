@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from "@/app/ui/Cards/Card"
+import Card from "@/app/ui/Cards/VideosCard"
 import cardData from "@/app/ui/Cards/cardData"
 const Courses = () => {
     return (
