@@ -37,9 +37,9 @@ const VideosCard = ({ title, author, url }) => {
                 </>
             ) : (
                 <Link href={url} target="_blank">
-                    <div className="mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-between cursor-pointer">
+                    <div className="min-h-52 mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-between cursor-pointer">
                         <div>
-                            <div className="mt-2">
+                            <div className="mt-2 flex justify-between">
                                 <h2 href="#" className="text-lg leading-6 text-start font-semibold text-gray-800 tracking-normal">
                                     {title}
                                 </h2>

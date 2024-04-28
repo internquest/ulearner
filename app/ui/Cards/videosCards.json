@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://www.youtube.com/live/efCgsdc9eAA",
+    "title": "Let’s build LinkedIn 2.0 with NEXT.JS 14! (Microsoft Azure, GitHub Copilot, MongoDB, TypeScript)",
+    "date": "April, 2024",
+    "author": "Sonny Sangha"
+  },
+  {
+    "url": "https://youtu.be/iDZBeIgcixk",
+    "title": "Build a FinTech Clone with React Native (API Routes, Zustand, Tanstack Query, FaceID, Charts, Clerk)",
+    "date": "March, 2024",
+    "author": "Simon Grimm"
+  },
+  {
+    "url": "https://youtu.be/71AsYo2q_0Y",
+    "title": "Ticket Booking App Development Tutorial",
+    "date": "July, 2022",
+    "author": "dbestech"
+  },
+  {
+    "url": "https://youtu.be/WmMHbLzQI98",
+    "title": "Build a Real-Time Chat App with NextJS, React, ShadcnUI, and Tailwind",
+    "date": "April, 2024",
+    "author": "Code Complete"
+  },
+  {
+    "url": "https://youtu.be/5w0hpcq9TME",
+    "title": "Building a Discord Clone using Next.js, TailwindCSS, Clerk, and Stream",
+    "date": "April, 2024",
+    "author": "Stream Developers"
+  },
+  {
+    "url": "https://youtu.be/bymQakvTY40",
+    "title": "How To Build A Complete Distributed File Storage In Golang",
+    "date": "April, 2024",
+    "author": "Anthony GG"
+  },
+  {
+    "url": "https://youtu.be/0iNJPKheQqM",
+    "title": "IPL Data Analysis | Apache Spark End-To-End Data Engineering Project",
+    "date": "April, 2024",
+    "author": "Darshil Parmar"
+  },
+  {
+    "url": "https://youtu.be/rY8DJ5EZzZo",
+    "title": "Build And Deploy Full Stack Task Management Application | React , Node JS , Express JS, Mongo DB",
+    "date": "April, 2024",
+    "author": "The Code Master"
+  },
+  {
+    "url": "https://youtu.be/9CElrkFwiBU",
+    "title": "Build a Music Player app with React Native, Expo, Typescript and Zustand",
+    "date": "April, 2024",
+    "author": "Code With Gionatha"
+  },
+  {
+    "url": "https://youtu.be/6a3Dz8gwjdg",
+    "title": "Build and Deploy a React Admin Dashboard With Real time Data, Charts, Events, Kanban, CRM, and More",
+    "date": "Jan, 2024",
+    "author": "JavaScript Mastery"
+  },
+  {
+    "url": "https://youtu.be/Kkht2mwSL_I",
+    "title": "MERN Full Stack Project: Build a Blog App with Dashboard using MERN (jwt, redux toolkit)",
+    "date": "Jan, 2024",
+    "author": "React & Next js Projects with Sahand"
+  },
+  {
+    "url": "https://youtu.be/nANLXwxZxks",
+    "title": "Full stack Budget Tracker: NextJs , React,Typescript ,React-Query, Prisma - SQL, Recharts, Tailwind",
+    "date": "April, 2024",
+    "author": "Code with Kliton"
+  },
+  {
+    "url": "https://youtu.be/QGXUUXy0AMw",
+    "title": "Full stack Form builder, React, Typescript , Dnd-Kit, PostgreSQL, Prisma, Tailwind",
+    "date": "Oct, 2023",
+    "author": "Code with Kliton"
+  },
+  {
+    "url": "https://youtu.be/ShlJel8gOeU",
+    "title": "10 Projects for Placement in C Beginner to Advanced (24)",
+    "date": "April, 24",
+    "author": "KG Coding by Prashant Sir"
+  }
+]

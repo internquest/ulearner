@@ -1,0 +1,57 @@
+[
+  {
+    "url": "https://www.youtube.com/playlist?list=PLcAVdtHk_JSTzetvhZ3ni-W4-DVmXw_dz",
+    "title": "Digiboard",
+    "techStack": "Next.js, React.js, Tailwind CSS, Express, Socket"
+  },
+  {
+    "url": "https://www.youtube.com/playlist?list=PLcAVdtHk_JSRW_IpvEn_wWy0MVkSf1WYX",
+    "title": "Google Docs Clone",
+    "techStack": "React.js, Tailwind CSS, Typescript, Socket.io"
+  },
+  {
+    "url": "https://www.youtube.com/playlist?list=PLcAVdtHk_JSRg2HFh7yeowBDFLqUECMny",
+    "title": "Revive Image",
+    "techStack": "Next.js,React.js, Tailwind CSS, Prisma, Redis, Typescript"
+  },
+  {
+    "url": "https://www.youtube.com/playlist?list=PLcAVdtHk_JSRehlW65eZuk-otQbfV2zhY",
+    "title": "UrAvatar",
+    "techStack": "Next.js, Chakra UI, Typescript"
+  },
+  {
+    "url": "https://www.youtube.com/playlist?list=PLcAVdtHk_JSQ7kpWVVzaWLl_ympYVdiKx",
+    "title": "Simple Forms",
+    "techStack": "Next.js, React.js, Tailwind CSS, Typescript"
+  },
+  {
+    "url": "https://www.youtube.com/playlist?list=PLcAVdtHk_JSQXiyZw0L9J9VyWZJaOe-lz",
+    "title": "Github Readme Creator",
+    "techStack": "Next.js, Tailwind CSS, Javascript"
+  },
+  {
+    "url": "https://youtube.com/playlist?list=PLWyN7K28ZraQi1_7ILgiKAiY_FmGeQWbI",
+    "title": "Multiverse of 100+ Data Science Project",
+    "techStack": "Machine Learning, Deep Learning, Natural Language, Reinforcement Learning, Data Analysis"
+  },
+  {
+    "url": "https://youtube.com/playlist?list=PLfFghEzKVmjvuSA67LszN1dZ-Dd_pkus6",
+    "title": "Machine Learning Projects",
+    "techStack": "Machine Learning"
+  },
+  {
+    "url": "https://youtube.com/playlist?list=PLN4aKSfpk8TQYayZIGqBJXXc8723SSLnh",
+    "title": "Build Your Own Clubhouse App",
+    "techStack": "Flutter"
+  },
+  {
+    "url": "https://youtube.com/playlist?list=PLzcRC7PA0xWTy1tnnjwgqBA8tYD8NXs2F",
+    "title": "Book Store App",
+    "techStack": "Flutter"
+  },
+  {
+    "url": "https://youtube.com/playlist?list=PLYktmUPNARbrrKwRhnKyY4-pKvLC0fpL1",
+    "title": "Nuxt Projects",
+    "techStack": "Nuxt 3, Tailwind CSS, Supabase, MongoDB"
+  }
+]

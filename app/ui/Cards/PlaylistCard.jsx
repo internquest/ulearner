@@ -39,18 +39,22 @@ const PlaylistCard = ({ title, techStack, url }) => {
             ) : (
                 // Render actual content
                 <Link href={url} target="_blank">
-                    <div className="mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-between cursor-pointer">
-                        <div>
-                            <div className="mt-2">
-                                <h2 className="text-lg leading-6 text-start font-semibold text-gray-800 tracking-normal">
+                    <div className=" mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-start cursor-pointer">
+                        <div className="mt-2">
+                            <div className="flex items-center justify-between">
+                                <h2 className="text-lg leading-6 font-semibold text-gray-800 tracking-normal h-20 overflow-hidden">
                                     {title}
                                 </h2>
-                                <p className="mt-2 text-[#0e0e0e] leading-7 tracking-normal">
-                                    {Array.isArray(techStack) && techStack.length > 0 ? (
-                                        techStack.map((tech, index) => (
-                                            <span key={index} className="mt-2 text-[#0e0e0e] leading-7 tracking-normal">
-                                                {tech}
-                                                {index !== techStack.length - 1 && ' • '}
+                            </div>
+                        </div>
+                        <div className="mt-2 flex flex-col ">
+                            <div className="h-full overflow-y-auto">
+                                <p className="text-[#0e0e0e] leading-7 tracking-normal">
+                                    {typeof techStack === 'string' && techStack.length > 0 ? (
+                                        techStack.split(',').map((tech, index) => (
+                                            <span key={index} className="inline-block">
+                                                {tech.trim()}
+                                                {index !== techStack.split(',').length - 1 && ' •\u00A0'}
                                             </span>
                                         ))
                                     ) : (
@@ -60,6 +64,7 @@ const PlaylistCard = ({ title, techStack, url }) => {
                             </div>
                         </div>
                     </div>
+
                 </Link>
             )}
         </div>

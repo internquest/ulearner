@@ -37,16 +37,16 @@ const CoursesCard = ({ title, author, date, url }) => {
                 </>
             ) : (
                 <Link href={url} target="_blank">
-                    <div className="mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-between cursor-pointer">
+                    <div className="min-h-56 mx-auto h-full p-4 bg-white border rounded-md shadow-sm flex flex-col justify-between cursor-pointer">
                         <div>
-                            <div className="mt-2">
+                            <div className="mt-2 flex justify-between">
                                 <h2 href="#" className="text-lg leading-6 text-start font-semibold text-gray-800 tracking-normal">
                                     {title}
                                 </h2>
                             </div>
                         </div>
                         <div className="mt-4">
-                            <p className="pb-2 text-blue-600 text-base tracking-normal font-medium" tabIndex="0" role="link">
+                            <p className="text-blue-600 text-base tracking-normal font-medium" tabIndex="0" role="link">
                                 {author}
                             </p>
                             <p className="  text-[#0e0e0e] opacity-50 text-base tracking-normal font-medium" tabIndex="0" role="link">
