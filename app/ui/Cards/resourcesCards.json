@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Data-Science Interview Questions Answers",
+    "url": "https://github.com/youssefHosni/Data-Science-Interview-Questions-Answers",
+    "desc": "A curated list of data science interview questions and answers"
+  },
+  {
+    "title": "Data Science Interview Resources",
+    "url": "https://github.com/rbhatia46/Data-Science-Interview-Resources",
+    "desc": "A repository listing out the potential sources which will help you in preparing for a Data Science/Machine Learning interview."
+  },
+  {
+    "title": "Data Science Projects",
+    "url": "https://github.com/veb-101/Data-Science-Projects",
+    "desc": "Collection of data science projects in Python"
+  },
+  {
+    "title": "Best-of Machine Learning with Python",
+    "url": "https://github.com/ml-tooling/best-of-ml-python",
+    "desc": "A ranked list of awesome machine learning Python libraries"
+  }
+]
