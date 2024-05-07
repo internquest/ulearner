@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 const VideosCard = ({ title, author, url }) => {
     const [isLoading, setIsLoading] = useState(true);
