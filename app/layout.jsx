@@ -13,10 +13,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} bg-[#fafafa]`}>
-        <div className='selection:bg-lime'>
+        <div className="selection:bg-lime">
           <SideNavbar />
         </div>
-        <div className="lg:ml-72 selection:bg-lime bg-[#fafafa] pb-20 lg:pb-0">
+        <div className="bg-[#fafafa] pb-20 selection:bg-lime lg:ml-72 lg:pb-0">
           {children}
         </div>
         <BottomNavigation />

@@ -8,12 +8,12 @@ module.exports = {
   theme: {
     extend: {
       inset: {
-        'initial': 'initial',
+        initial: "initial",
       },
       colors: {
         error: "#cc3341",
-        lime: "#daf996"
-      }
+        lime: "#daf996",
+      },
     },
   },
   plugins: [],
