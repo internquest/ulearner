@@ -5,7 +5,6 @@ import Image from "next/image";
 import Button from '@/app/components/Button';
 import { SchibstedGroteskmed, SchibstedGroteskmreg, } from '@/app/fonts/fonts';
 import Individualvideo from '@/app/components/Individualvideo';
-import Videos from '@/app/components/Videos';
 
 
 
@@ -16,47 +15,57 @@ import Videos from '@/app/components/Videos';
 // import cardData from "@/app/ui/Cards/playlistCards.json";
 
 const Playlists = () => {
-  const projectsplaylists = [
+
+  const videos = [
     {
-      "URL": "https://youtube.com/playlist?list=PLdLUE-L26MMbXYkddCi6Cb1jy5dKczosk",
-      "Title": "React Chat App"
+      title: "JavaScript Full Course (2024) - Basic to Advance",
+      videourl: ""
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLRAV69dS1uWRJcxXk1omgcMI07ygMxSRl",
-      "Title": "Stackoverflow clone | Appwrite + NextJS"
+      title: "JavaScript Full Course (2024) - Basic to Advance",
+      videourl: ""
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLh9snHvfAj6JvhV8QnOad1DTKKPa-6v7-",
-      "Title": "Podcaster MERN Stack"
+      title: "JavaScript Full Course (2024) - Basic to Advance",
+      videourl: ""
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLh9snHvfAj6IwguqPwSJx8zFTxBwRSwTT",
-      "Title": "Book Store with Admin panel"
+      title: "JavaScript Full Course (2024) - Basic to Advance",
+      videourl: ""
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLXQpH_kZIxTUCvlEKuXCSn45fMKqAswlW",
-      "Title": "Modern Cv using Html, Css and Javascript"
+      title: "JavaScript Full Course (2024) - Basic to Advance",
+      videourl: ""
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLNn5_vJ1tp1EbKNlVzhcaJKP6Q9-W9cff&",
-      "Title": "Become Web developer by Building 50+ Projects in HTML, CSS, JS"
+      title: "JavaScript Full Course (2024) - Basic to Advance",
+      videourl: ""
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLxVP80QwEJLAtP-mERzx3MYia5R2jvjTz",
-      "Title": "React Inventory Management System"
+      title: "JavaScript Full Course (2024) - Basic to Advance",
+      videourl: ""
     },
-    {
-      "URL": "https://youtube.com/playlist?list=PLj-4DlPRT48nCEYVkuvJAGYY5LCQJl3q0",
-      "Title": "Next.js School Management App Project"
-    },
-    {
-      "URL": "https://youtube.com/playlist?list=PLj-4DlPRT48njIa8I19ftTjUxyys9ebcf",
-      "Title": "React Node.js Real Estate App"
-    }
+
+
   ]
   return (
-    <Videos videos={projectsplaylists} videolink={"/projects/videos"} playlistlink={"/projects/playlists"} />
+    <div className="px-5">
+      <div className="flex whitespace-nowrap justify-end px-2 py-5 mx-12 sm:flex-wrap lg:px-0">
+        <Link href={"/interview-prep/videos"} >
 
+          <Button css={` my-1 mr-2 rounded-[30px] border border-solid border-[#EFF2F1] px-4 py-2 text-sm ${SchibstedGroteskmed.className} font-semibold text-[#0e0e0e]`} name={"Videos"} path={"/interview-prep/videos"} />
+        </Link>
+        <Link href={"/interview-prep/playlists"}>
+          <Button css={` my-1 mr-2 rounded-[30px] border border-solid border-[#EFF2F1] px-4 py-2 text-sm ${SchibstedGroteskmed.className} font-semibold text-[#0e0e0e]`} name={"Playlists"} path={"/interview-prep/playlists"} />
+
+        </Link>
+      </div>
+      <div className="border-t border-[#D7D7D780]/[.5]  ">
+        {
+          videos.map((video, index) => <Individualvideo key={index} title={video.title} videourl={video.videourl} />)
+        }
+      </div>
+    </div>
   )
 
   // return (

@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import SideNavbar from "@/app/ui/Sidebar/Sidebar";
 import BottomNavigation from "@/app/ui/BottomNavigation/BottomNavigation";
+import Searchbar from "./ui/Navbar/Searchbar";
+import Navbar from "./ui/Navbar/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -10,16 +12,30 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
   return (
-    <html lang="en">
-      <body className={`${inter.className} bg-[#fafafa]`}>
-        <div className="selection:bg-lime">
+    <html lang="en" className="">
+      <body className={`${inter.className} bg-[#F8F8F8] flex justify-center items-center  `}>
+        <div className="lg:hidden h-screen w-screen flex justify-center items-center">
+          this website is only built for desktop v  iew please try viewing in higher resolutions
+        </div>
+
+        <div className="hidden lg:grid grid-cols-[240px_986px] h-min m-4 gap-x-5 gap-y-5 grid-rows-[min-content_min-h-[677px]]  mb-5">
+          <Navbar />
+          <SideNavbar />
+          <div className="[grid-area:2/2/3/3]  rounded-[20px] bg-white ">
+            {children}
+          </div>
+        </div>
+
+
+        {/* <div className="selection:bg-lime">
           <SideNavbar />
         </div>
         <div className="bg-[#fafafa] pb-20 selection:bg-lime lg:ml-72 lg:pb-0">
           {children}
-        </div>
-        <BottomNavigation />
+        </div> */}
+        {/* <BottomNavigation /> */}
       </body>
     </html>
   );

@@ -11,56 +11,34 @@ import Videos from '@/app/components/Videos';
 
 
 // import TopBar from "@/app/ui/Topbar/TopBar";
-// import Card from "@/app/ui/Cards/PlaylistCard";
+// import Card from "@/app/ui/Cards/VideosCard";
 // import { RiSearchLine } from "react-icons/ri";
-// import cardData from "@/app/ui/Cards/playlistCards.json";
+// import cardData from "@/app/ui/Cards/videosCards.json";
 
-const Playlists = () => {
-  const projectsplaylists = [
+const VideosPage = () => {
+
+  const videos = [
     {
-      "URL": "https://youtube.com/playlist?list=PLdLUE-L26MMbXYkddCi6Cb1jy5dKczosk",
-      "Title": "React Chat App"
+      "URL": "https://youtu.be/2ZLl8GAk1X4",
+      "Title": "Data Structures and Algorithms with Visualizations – Full Course (Java)"
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLRAV69dS1uWRJcxXk1omgcMI07ygMxSRl",
-      "Title": "Stackoverflow clone | Appwrite + NextJS"
+      "URL": "https://youtu.be/gUUCmRJjVvo",
+      "Title": "JavaScript Interview Questions in One Video | JavaScript in Hindi"
     },
     {
-      "URL": "https://youtube.com/playlist?list=PLh9snHvfAj6JvhV8QnOad1DTKKPa-6v7-",
-      "Title": "Podcaster MERN Stack"
-    },
-    {
-      "URL": "https://youtube.com/playlist?list=PLh9snHvfAj6IwguqPwSJx8zFTxBwRSwTT",
-      "Title": "Book Store with Admin panel"
-    },
-    {
-      "URL": "https://youtube.com/playlist?list=PLXQpH_kZIxTUCvlEKuXCSn45fMKqAswlW",
-      "Title": "Modern Cv using Html, Css and Javascript"
-    },
-    {
-      "URL": "https://youtube.com/playlist?list=PLNn5_vJ1tp1EbKNlVzhcaJKP6Q9-W9cff&",
-      "Title": "Become Web developer by Building 50+ Projects in HTML, CSS, JS"
-    },
-    {
-      "URL": "https://youtube.com/playlist?list=PLxVP80QwEJLAtP-mERzx3MYia5R2jvjTz",
-      "Title": "React Inventory Management System"
-    },
-    {
-      "URL": "https://youtube.com/playlist?list=PLj-4DlPRT48nCEYVkuvJAGYY5LCQJl3q0",
-      "Title": "Next.js School Management App Project"
-    },
-    {
-      "URL": "https://youtube.com/playlist?list=PLj-4DlPRT48njIa8I19ftTjUxyys9ebcf",
-      "Title": "React Node.js Real Estate App"
+      "URL": "https://youtu.be/AUTO7ALJk2U",
+      "Title": "Top 100 JavaScript Interview Questions and Answers"
     }
   ]
   return (
-    <Videos videos={projectsplaylists} videolink={"/projects/videos"} playlistlink={"/projects/playlists"} />
+    <Videos videos={videos} videolink={"/interview-prep/videos"} playlistlink={"/interview-prep/playlists"} />
 
   )
 
+
   // return (
-  //   <div>
+  //   <>
   //     <TopBar />
   //     <section className="w-full bg-[#fafafa] px-0 py-4 sm:px-4 lg:px-0">
   //       <div className="mx-auto w-full max-w-screen-lg pb-4">
@@ -75,6 +53,7 @@ const Playlists = () => {
   //           </div>
   //         </div>
   //       </div>
+
   //       <div className="mx-auto max-w-screen-lg rounded-md border bg-white text-gray-600">
   //         <div className="px-4 pt-4">
   //           <p className="text-[.8125rem] font-medium leading-5 text-[#666]">
@@ -95,17 +74,19 @@ const Playlists = () => {
   //             {cardData.map((card, index) => (
   //               <Card
   //                 key={index}
+  //                 status={card.status}
   //                 title={card.title}
+  //                 description={card.description}
+  //                 author={card.author}
   //                 url={card.url}
-  //                 techStack={card.techStack}
   //               />
   //             ))}
   //           </div>
   //         </div>
   //       </div>
   //     </section>
-  //   </div>
+  //   </>
   // );
 };
 
-export default Playlists;
+export default VideosPage;
