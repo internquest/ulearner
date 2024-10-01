@@ -5,6 +5,7 @@ import Image from "next/image";
 import Button from '@/app/components/Button';
 import { SchibstedGroteskmed, SchibstedGroteskmreg, } from '@/app/fonts/fonts';
 import Individualvideo from '@/app/components/Individualvideo';
+import Videos from '@/app/components/Videos';
 
 
 
@@ -18,54 +19,64 @@ const Playlists = () => {
 
   const videos = [
     {
-      title: "JavaScript Full Course (2024) - Basic to Advance",
-      videourl: ""
+      "URL": "https://youtube.com/playlist?list=PLZlEBHEeC6tVvPPtxdz6M9TSH5ZgjxsPu",
+      "Title": "Data Structure Using C/C++"
     },
     {
-      title: "JavaScript Full Course (2024) - Basic to Advance",
-      videourl: ""
+      "URL": "https://youtube.com/playlist?list=PLKhlp2qtUcSZiWKJTi5-5r6IRdHhxP9ZU",
+      "Title": "React JS Interview Questions"
     },
     {
-      title: "JavaScript Full Course (2024) - Basic to Advance",
-      videourl: ""
+      "URL": "https://youtube.com/playlist?list=PL3aZbxdSiCbM9EfasmUTQ4njpZ-E5P6zd",
+      "Title": "React Interview Questions by Interview Happy"
     },
     {
-      title: "JavaScript Full Course (2024) - Basic to Advance",
-      videourl: ""
+      "URL": "https://youtube.com/playlist?list=PL3aZbxdSiCbOBbNqpsFmn9aUQUcYmg7Kz",
+      "Title": "Node.js Interview Questions by Interview Happy"
     },
     {
-      title: "JavaScript Full Course (2024) - Basic to Advance",
-      videourl: ""
+      "URL": "https://youtube.com/playlist?list=PL8p2I9GklV47TMMnPzqnkCtSOS3ebr4O7",
+      "Title": "Data Structures and Algorithm With JavaScript in Hindi | DSA in JavaScript"
     },
     {
-      title: "JavaScript Full Course (2024) - Basic to Advance",
-      videourl: ""
+      "URL": "https://youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi",
+      "Title": "Data Structures and Algorithms Course in Hindi"
     },
     {
-      title: "JavaScript Full Course (2024) - Basic to Advance",
-      videourl: ""
+      "URL": "https://youtube.com/playlist?list=PLBBK9G6O8MPDVnh4ANEuL9YfejSSdacSg",
+      "Title": "Tricky Java Interview Questions"
     },
-
-
+    {
+      "URL": "https://youtube.com/playlist?list=PLXQpH_kZIxTVwiGpOqnkFb1-aHMIai7ld",
+      "Title": "Javascript Interview questions"
+    },
+    {
+      "URL": "https://youtube.com/playlist?list=PLBBK9G6O8MPBosgokQfKpo8Aj6yq49whX",
+      "Title": "Core Java Interview Questions"
+    },
+    {
+      "URL": "https://youtube.com/playlist?list=PLNn5_vJ1tp1EaVSigz5bpm0KuNITJjxCf",
+      "Title": "Blind 75 Sheet of Leetcode"
+    },
+    {
+      "URL": "https://youtube.com/playlist?list=PLGf6Ram2AQh3TBegS5vzNcQQeEFve8Kmj",
+      "Title": "MySQL Exercises and Questions and Answers"
+    },
+    {
+      "URL": "https://youtube.com/playlist?list=PLBBK9G6O8MPDEeSVG17Pwya2xlUNbZn30",
+      "Title": "Multithreading Java"
+    },
+    {
+      "URL": "https://youtube.com/playlist?list=PLKhlp2qtUcSZtJefDThsXcsAbRBCSTgW4",
+      "Title": "Data Structures and Algorithms in Javascript | DSA with JS"
+    },
+    {
+      "URL": "https://youtube.com/playlist?list=PLKhlp2qtUcSaCVJEt4ogEFs6I41pNnMU5",
+      "Title": "Javascript Interview Questions"
+    }
   ]
   return (
-    <div className="px-5">
-      <div className="flex whitespace-nowrap justify-end px-2 py-5 mx-12 sm:flex-wrap lg:px-0">
-        <Link href={"/interview-prep/videos"} >
-
-          <Button css={` my-1 mr-2 rounded-[30px] border border-solid border-[#EFF2F1] px-4 py-2 text-sm ${SchibstedGroteskmed.className} font-semibold text-[#0e0e0e]`} name={"Videos"} path={"/interview-prep/videos"} />
-        </Link>
-        <Link href={"/interview-prep/playlists"}>
-          <Button css={` my-1 mr-2 rounded-[30px] border border-solid border-[#EFF2F1] px-4 py-2 text-sm ${SchibstedGroteskmed.className} font-semibold text-[#0e0e0e]`} name={"Playlists"} path={"/interview-prep/playlists"} />
-
-        </Link>
-      </div>
-      <div className="border-t border-[#D7D7D780]/[.5]  ">
-        {
-          videos.map((video, index) => <Individualvideo key={index} title={video.title} videourl={video.videourl} />)
-        }
-      </div>
-    </div>
+    <Videos videos={videos} videolink={"/interview-prep/videos"} playlistlink={"/interview-prep/playlists"} />
   )
 
   // return (
